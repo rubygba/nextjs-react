@@ -29,7 +29,7 @@ function Counter () {
   const [name, setName] = useState(2)
 
   const handleClick = () => {
-    setCount(count + 0)
+    setCount(count + 1)
   }
 
   // my effect init
@@ -49,6 +49,7 @@ function Counter () {
       <button onClick={() => {setName(name + Math.random())}}>点击+随机</button>
       <div>{count}</div>
       <button onClick={handleClick}>点击+1</button>
+      <button onClick={() => {setCount(count + 0)}}>点击+0</button>
     </div>
   )
 }
